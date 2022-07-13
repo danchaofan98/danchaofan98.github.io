@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>蛋炒饭的博客</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-07-11T08:52:51.308Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>蛋炒饭</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客插入图片</title>
+    <link href="http://example.com/2022/07/01/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2022/07/01/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
+    <published>2022-07-01T07:29:28.000Z</published>
+    <updated>2022-07-11T08:52:51.308Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在md文件中插入图片的语法为 <code>![]()</code> 。其中方括号是图片描述，圆括是图片路径。我们的图片路径使用相对路径。</p><p>在hexo中使用文章资源文件夹需要在 <code>_config.yaml</code> 文件中更改一下配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure><p>当该配置被应用后，使用 <code>hexo new</code> 命令创建新文章md文件时，会生成相同名字的文件夹，也就是文章资源文件夹。也可以直接新建md文件和同名的文件夹，效果是一样的。</p><p>在新文章md文件中插入图片，图片存放的位置是和新文章md文件同名的文件夹；图片的路径不太好写，这是需要借助插件。</p><h2 id="hexo-asset-image-for-hexo5插件"><a href="#hexo-asset-image-for-hexo5插件" class="headerlink" title="hexo-asset-image-for-hexo5插件"></a>hexo-asset-image-for-hexo5插件</h2><p><a href="https://github.com/uinika/hexo-asset-image-for-hexo5">hexo-asset-image-for-hexo5</a></p><p>安装这个插件之后，图片的路径直接使用图片的文件名即可。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">├─Data-Structure</span><br><span class="line">├── logo.jpg</span><br><span class="line">└─Data-Structure.md</span><br></pre></td></tr></table></figure><p>使用 <code>![logo](Data-Structure/logo.jpg)</code> 来插入图片。</p><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>建议使用Typora工具书写md文件</p><p>可以使用python脚本去除文件夹中多余的图片</p><p>在Typora中可以使用在图片后面敲空格使得图片左对齐，但是推送到网站上就不能左对齐了</p><img src="/2022/07/01/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/01.jpg" alt="01" style="zoom:25%;"> ]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在md文件中插入图片的语法为 &lt;code&gt;![]()&lt;/code&gt; 。其中方括号是图片描述，圆括是图片路径。我们的图片路径使用相对路径。&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/07/01/hello-world/"/>
+    <id>http://example.com/2022/07/01/hello-world/</id>
+    <published>2022-07-01T02:54:21.942Z</published>
+    <updated>2022-07-01T02:54:21.942Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

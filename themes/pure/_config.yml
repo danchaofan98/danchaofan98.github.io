@@ -30,9 +30,9 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: ../images/logo.png
+    url: ../images/logo.png  # ?
   title: Hexo # 页面title
-  favicon: /favicon.png
+  favicon: /favicon.ico
   board: <p>欢迎交流与分享经验!</p> # 站点公告
   copyright: false # 底部版权信息
 
@@ -88,7 +88,7 @@ search:
 
 # Donate
 donate:
-  enable: true
+  enable: false
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
@@ -101,7 +101,7 @@ donate:
 # Share
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
-  enable: true  # 是否启用分享
+  enable: false  # 是否启用分享
   sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
@@ -113,7 +113,7 @@ share:
 # 项目仓库信息（将会覆盖 github 项）
 repository:
   platform: github # 托管平台（github | gitee）
-  username: cofess # 用户名
+  username: danchaofan98 # 用户名
 
 # Comment
 # Gitment
@@ -153,15 +153,15 @@ comment:
 
 # douban 豆瓣书单
 # Api：
-  # https://developers.douban.com/wiki/?title=book_v2 图书
-  # https://developers.douban.com/wiki/?title=movie_v2 电影
+#   https://developers.douban.com/wiki/?title=book_v2 图书
+#   https://developers.douban.com/wiki/?title=movie_v2 电影
 # books：  
-  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+#   https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
 # movies: 
-  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
-  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
-  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
-  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
+#   https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+#   https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+#   https://api.douban.com/v2/movie/subject/:id 单个电影信息
+#   https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
   user: # 豆瓣用户名
   start: 0 # 从哪一条记录开始
@@ -200,13 +200,13 @@ fb_app_id:
 profile:
   enabled: true # Whether to show profile bar
   articleSelfBlock: false # 关闭文章下方的自我介绍
-  avatar: images/avatar.jpg
+  avatar: images/avatar.png
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
+  author: 蛋炒饭
   author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  author_description: 刚入门前端的小菜鸡~
+  location: Chongqing, China
+  follow: https://github.com/danchaofan98
   # Social Links
   social:
     links:
